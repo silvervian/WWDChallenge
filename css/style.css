@@ -1,0 +1,265 @@
+@import url(reset.css);
+
+@font-face {
+    font-family: 'Titillium';
+    src: url(../assets/TitilliumText22L003.otf);
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Titillium';
+    background: url(../img/bg.png) fixed no-repeat;
+    background-size: cover;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+header {
+    margin: 55px 0 26px;
+}
+img {
+    display: block;
+    margin: 0 auto;
+    opacity: .4;
+}
+footer {
+    width: 420px;
+}
+footer img {
+    margin: 50px auto;
+}
+h1 {
+    color: #fff;
+    line-height: 1.2;
+    font-family: Titillium, sans-serif;
+    font-size: 3.2rem;
+    text-align: center;
+    margin: 20px;
+    text-shadow: 0px 2px 2px rgba(43, 1, 0, 0.75);
+}
+.default-container {
+    width: 420px;
+}
+.form-shadow {
+    padding: 20px;
+    background: rgba(0,0,0, .231);
+    border-radius: 3px;
+}
+form {
+    background-color: #f4f4f4;
+    border-radius: 3px;
+    padding: 20px;
+}
+.input-field {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border: 1px solid #c6c6c6;
+    border-radius: 3px;
+    background-image: -moz-linear-gradient(90deg, rgb(248,248,248) 0%, rgb(243,243,243) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(248,248,248) 0%, rgb(243,243,243) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(248,248,248) 0%, rgb(243,243,243) 100%);
+    box-shadow: 0px 1px 1px rgb(255, 255, 255);
+}
+.last {
+    margin-bottom: 0px;
+}
+.input-icon {
+    position: absolute;
+    width: 57px;
+	height: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-right: 1px solid #c6c6c6;
+}
+select {
+    margin-bottom: 0px;
+    
+}
+input[type=text], input[type=email],input[type=password], input[type=number], select {
+    padding-left: 74px;
+    color: #afafaf;
+    height: 41px;
+    width: 100%;
+    border: none;
+    font-family: Titillium, sans-serif;
+    font-size: 1.6rem;
+    background-image: -moz-linear-gradient(90deg, rgb(248,248,248) 0%, rgb(243,243,243) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(248,248,248) 0%, rgb(243,243,243) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(248,248,248) 0%, rgb(243,243,243) 100%);
+}
+select {
+    appearance: none;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    background: url(../img/arrow.png) right no-repeat;
+    background-position: right 10px center;
+    
+}
+.checkbox-field {
+    position: relative;
+}
+.checkbox-text {
+    color: #afafaf;
+    position: absolute;
+    top: 17px;
+    left: 40px;
+    font-size: 1.7rem;
+}
+.user {
+    background: url(../img/user.png) center center no-repeat;
+}
+.lock {
+    background: url(../img/lock.png) center center no-repeat;
+}
+.email {
+    background: url(../img/envelope.png) center center no-repeat;
+}
+.mark {
+    background: url(../img/glyphicons.png) center center no-repeat;
+}
+.phone {
+    background: url(../img/phone.png) center center no-repeat;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox] + label {
+    margin-top: 10px;
+    background: url(../img/check.png) no-repeat center center;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    padding: 0;
+    cursor: pointer;
+}
+
+input[type=checkbox] + label:hover {
+    background: url(../img/checked.png) no-repeat center center;
+}
+
+input[type=checkbox]:checked + label {
+    background: url(../img/checked.png) no-repeat center center;
+}
+
+input[type=button] {
+    font-family: Titillium, sans-serif;
+    font-size: 2.4rem;
+    color: #fff;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+    height: 48px;
+    border: 1px solid #3b9a00;
+    border-radius: 3px;
+    background-image: -webkit-linear-gradient(top, #a3d841, #7cc31f);
+    background-image: -moz-linear-gradient(top, #a3d841, #7cc31f);
+	background-image: -ms-linear-gradient(top, #a3d841, #7cc31f);
+	background-image: -o-linear-gradient(top, #a3d841, #7cc31f);
+	background-image: linear-gradient(to bottom, #a3d841, #7cc31f);
+    cursor: pointer;
+    box-shadow: 0 1px 1px #fff;
+}
+input[type=button]:hover {
+    background-image: -webkit-linear-gradient(#7cc31f, #a3d841);
+    background-image: -o-linear-gradient(#7cc31f, #a3d841);
+    background-image: linear-gradient(#7cc31f, #a3d841);
+}
+textarea {
+    font-family: Titillium, sans-serif;
+    color: #afafaf;
+    width: 296px;
+    height: 230px;
+    padding: 15px;
+    background: none;
+    border: none;
+    resize: none;
+}
+.full {
+    width: 100%;
+}
+.half {
+    width: 150px;
+}
+.right {
+    float: right;
+}
+.left {
+    float: left;
+}
+label {
+    margin-bottom: 10px;
+}
+.small {
+    font-size: 1.8rem!important;
+    width: 146px;
+}
+.inactive {
+	border: solid #96cd75 1px !important;
+	background: #c7e1a7 !important;
+	background-image: -webkit-linear-gradient(top, #c7e1a7, #abd082) !important;
+	background-image: -moz-linear-gradient(top, #c7e1a7, #abd082) !important;
+	background-image: -ms-linear-gradient(top, #c7e1a7, #abd082) !important;
+	background-image: -o-linear-gradient(top, #c7e1a7, #abd082) !important;
+	background-image: linear-gradient(to bottom, #c7e1a7, #abd082) !important;
+	cursor: not-allowed !important;
+}
+
+.red {
+	border: solid #a21f2a 1px !important;
+	background: #f65f70 !important;
+	background-image: -webkit-linear-gradient(top, #f65f70, #f03747) !important;
+	background-image: -moz-linear-gradient(top, #f65f70, #f03747) !important;
+	background-image: -ms-linear-gradient(top, #f65f70, #f03747) !important;
+	background-image: -o-linear-gradient(top, #f65f70, #f03747) !important;
+	background-image: linear-gradient(to bottom, #f65f70, #f03747) !important;
+}
+
+.red:hover {
+	border: solid #a21f2a 1px !important;
+	background: #f65f70 !important;
+	background-image: -webkit-linear-gradient(top, #f03747, #f65f70) !important;
+	background-image: -moz-linear-gradient(top, #f03747, #f65f70) !important;
+	background-image: -ms-linear-gradient(top, #f03747, #f65f70) !important;
+	background-image: -o-linear-gradient(top, #f03747, #f65f70) !important;
+	background-image: linear-gradient(to bottom, #f03747, #f65f70) !important;
+}
+
+@media all and (max-width: 431px) {
+    
+    .first {
+        font-size: 1.5rem;
+    }
+    
+    .default-container {
+        width: 100%;
+    }
+    
+    input[value="Sign in"] {
+        float: none;
+        width: 100%;
+    }
+
+    .half {
+        width: 49%;
+    }
+    
+    img {
+        width: 100%;
+    }
+    
+    .checkbox-text {
+
+        top: 15px;
+    }
+}
+
+@media all and (max-width: 332px) {
+    .second {
+        font-size: 1.5rem;
+    }
+}
