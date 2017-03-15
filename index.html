@@ -1,1 +1,171 @@
-My Page
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Zadanie 1</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="img/logo.png" alt="logo">
+    </header>
+
+    <main>
+        <div class="row">
+
+            <div class="default-container">
+                <h1>Register Form</h1>
+                <div class="form-shadow">
+                    <form action="send">
+
+                        <div class="input-field">
+                            <div class="input-icon user"></div>
+                            <input type="text" placeholder="Username">
+                        </div>
+
+                        <div class="input-field">
+                            <div class="input-icon lock"></div>
+                            <input type="password" placeholder="Password">
+                        </div>
+
+                        <div class="input-field">
+                            <div class="input-icon lock"></div>
+                            <input type="password" placeholder="Confirm Password">
+                        </div>
+
+                        <div class="input-field">
+                            <div class="input-icon email"></div>
+                            <input type="email" placeholder="Email">
+                        </div>
+
+                        <div class="input-field last">
+                            <div class="input-icon mark"></div>
+                            <select name="location" id="loc">
+                                <option value="first">Your Location</option>
+                                <option value="polska">Polska</option>
+                                <option value="ukraina">Ukraina</option>
+                                <option value="rosja">Rosja</option>
+                            </select>
+                        </div>
+
+                        <div class="checkbox-field">
+                            <input type="checkbox" name="thing" value="valuable" id="thing">
+                            <label for="thing"><span class="checkbox-text first">I have read and accept the terms of use.</span></label>
+                        </div>
+
+                        <input type="button" class="full" value="Sign up">
+
+                    </form>
+                </div>
+            </div>
+            <!-- END REGISTER FORM -->
+
+            <div class="default-container">
+                <h1>Send Email</h1>
+                <div class="form-shadow">
+                    <form action="send">
+
+                        <div class="input-field">
+                            <div class="input-icon user"></div>
+                            <input type="text" placeholder="Your Name">
+                        </div>
+
+                        <div class="input-field">
+                            <div class="input-icon email"></div>
+                            <input type="email" placeholder="Your Email">
+                        </div>
+
+                        <div class="input-field last">
+                            <textarea placeholder="Type your message ..."></textarea>
+                        </div>
+
+                        <div class="checkbox-field">
+                            <input type="checkbox" id="thing2">
+                            <label for="thing2"><span class="checkbox-text second">Send a copy to my Email</span></label>
+                        </div>
+
+                        <input type="button" class="full" value="Send Email">
+
+                    </form>
+                </div>
+            </div>
+
+            <div class="default-container">
+                <h1>Sign in Form</h1>
+                <div class="form-shadow">
+                    <form action="send">
+
+                        <div class="input-field">
+                            <div class="input-icon user"></div>
+                            <input type="text" placeholder="Username">
+                        </div>
+
+                        <div class="input-field line">
+                            <div class="input-icon lock"></div>
+                            <input type="password" placeholder="Password">
+                        </div>
+
+                        <div class="checkbox-field">
+                            <input type="checkbox" id="thing3">
+                            <label for="thing3"><span class="checkbox-text">Remember me</span></label>
+                            <input type="button" class="half right margin" value="Sign in">
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+            <div class="default-container">
+                <h1>Recover Form</h1>
+                <div class="form-shadow">
+                    <form action="send">
+
+                        <div class="input-field">
+                            <div class="input-icon email"></div>
+                            <input type="email" placeholder="Enter your Email">
+                        </div>
+
+                        <div class="input-field">
+                            <div class="input-icon phone"></div>
+                            <input type="text" placeholder="Enter your Phone number">
+                        </div>
+
+                        <input type="button" class="half small" value="Send">
+                        <input type="button" class="half small right inactive" value="Done">
+
+                    </form>
+                </div>
+            </div>
+
+            <div class="default-container">
+                <h1>Subsribe Form</h1>
+                <div class="form-shadow">
+                    <form action="send">
+
+                        <div class="input-field">
+                            <div class="input-icon email"></div>
+                            <input type="email" placeholder="Email">
+                        </div>
+
+                        <input type="button" class="half small" value="Subscribe">
+                        <input type="button" class=" half right red small" value="No, Thanks">
+
+                    </form>
+                </div>
+            </div>
+
+            <footer>
+                <img src="img/logo2.png" alt="logo">
+            </footer>
+
+        </div>
+    </main>
+
+
+</body>
+
+</html>
